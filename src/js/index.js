@@ -32,10 +32,8 @@ const loadMorePhotos = async function (entries, observer) {
 
         refs.list.insertAdjacentHTML('beforeend', markup);
 
-        // const showMore = pixabay.hasMorePhotos();
-
         if (pixabay.hasMorePhotos) {
-          const lastItem = document.querySelector('.gallery__item:last-child');
+          const lastItem = document.querySelector('.gallery a:last-child');
           observer.observe(lastItem);
         } else
           Notify.info(
