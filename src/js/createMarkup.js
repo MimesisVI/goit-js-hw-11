@@ -10,9 +10,9 @@ export function createMarkup(photos) {
         comments,
         downloads,
       }) => /*html*/ `
-      <a class="cardLink" href="${largeImageURL}">
+      <a class="card-link" href="${largeImageURL}">
       <div class="photo-card">
-      <img src="${webformatURL}" alt="${tags}" loading="lazy" />
+      <img class="photo" src="${webformatURL}" alt="${tags}" loading="lazy" />
       <div class="info">
         <p class="info-item">
           <b>Likes</b>
